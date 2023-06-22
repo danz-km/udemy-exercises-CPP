@@ -1,0 +1,36 @@
+#include<iostream>
+
+using namespace std;
+
+void Armstrong(int n)
+{
+    //What is an armstrong number?
+    //An armstrong number is a number that is 
+    //the sum of its own digits each raised to the 
+    //power of the total number of digits it has
+    
+    //let m be original number
+    //let r be remainder
+    int sum=0,r;
+    int m=n;
+    
+    
+    //write a loop to find sum of cubes of digits
+    //check if a number is Armstrong
+    while (m!=0){
+        
+            //r will contain the last digit
+            r = m%10;
+            
+            //calculate result
+            sum += r*r*r;
+            
+            //remove the last digit from m
+            m/=10;
+        
+    }
+     if(sum==n) //detected a mistake and corrected it from //sum==m to sum==n
+        cout<<"armstrong";
+    else
+        cout<<"not armstrong";
+}
