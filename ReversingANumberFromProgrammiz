@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+
+void Reverse(int n)
+{
+    int rev=0;
+    //let m be original number
+    int m=n;
+    //let r be remainder
+    int r;
+    
+    //write loop for finding reverse of number and print it
+    //Example being 123456 to 654321
+    while(n!=0){
+        
+        //everythings from programmiz
+        r=n%10;
+        n/=10;
+        rev=(rev*10)+r;
+        
+    }
+    cout<<rev;
+}
