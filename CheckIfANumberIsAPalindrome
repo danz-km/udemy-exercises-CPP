@@ -1,0 +1,32 @@
+#include<iostream>
+using namespace std;
+
+void Palindrome(int n)
+{
+    int rev=0;
+    //remainder
+    int r;
+    //m to represent store original value
+    int m=n;
+    
+    //write a loop to find reverse of a number
+    //check it is a palindrome
+    
+    //copy almost everything
+    //from reverse a number
+    while(n!=0){
+        
+        //remainder to find last digit
+        r=n%10;
+        
+        n/=10;
+        
+        rev = (rev*10)+ r;
+    }
+    
+    //if-else case to compare m and rev
+    if (rev==m)
+        cout<<"palindrome";
+    else 
+        cout<<"not a palindrome";
+}
